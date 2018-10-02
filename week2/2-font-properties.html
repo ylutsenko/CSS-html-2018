@@ -12,6 +12,11 @@
         font-style: italic;
     }
 
+    .not-italic em {
+        font-style: normal;
+        font-weight: bold;
+    }
+
     .font-variant {
         font-variant: small-caps;
     }
@@ -21,7 +26,7 @@
     }
 
     .font-size {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .font-family {
@@ -29,14 +34,18 @@
     }
 
     .all {
+        font: italic small-caps bold 22px arial;
 
     }
 
     .font {
+        font: 16px arial;
 
     }
 
     h1 {
+        font-size: 32px;
+        font-family: times;
 
     }
     </style>
@@ -52,6 +61,12 @@
 
   <article>
     <p class="font-style">font-style</p>
+
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nam!</p> -->
+
+    <!-- p.not-italic>lorem10 -->
+
+    <p class="not-italic">Lorem ipsum <em>dolor sit amet consectetur adipisicing</em> elit. Adipisci, blanditiis.</p>
 
     <p class="font-variant">Font-Variant</p>
 
