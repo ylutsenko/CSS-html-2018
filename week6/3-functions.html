@@ -10,9 +10,85 @@
 
   <h1>Functions</h1>
 
-  <button>Click Here</button>
+  <button onclick="logName('from button')">Click Here</button>
 
   <script>
+    function logName(name) {
+      console.log(name);
+    }
+    
+    logName("Yana Lutsenko");
+    logName("Tim Cook");
+    logName("Lary Jones");
+
+    // conditional statement
+
+    if (false) {
+      console.log("class is stll going");
+    }
+
+    var hour = 10;
+    if (hour ===8) {
+      console.log("class is still going");
+    } else {
+      console.log("class is over");
+    }
+
+    var a = 100;
+    // var value;
+    // if (a === 100) {
+    //   value = "a is 100";
+    // } else {
+    //   value = "a is not 100";
+    // }
+
+    var value = a === 99 ? "a is 100" : "a is not 100";
+
+    console.log(value);
+
+    // return a value from the function
+
+    function addNumbers(a, b) {
+      var calcTotal = a + b;
+      return calcTotal;
+    }
+
+    var total = addNumbers (10, 39);
+
+    console.log(total / 25);
+
+    function getHex(color) {
+      if (typeof color !== "string") {
+        return;
+      }
+      var hexColor = null;
+      if(color === "red") {
+        hexColor = "#ff000";
+      }
+
+      return hexColor;
+    }
+
+    var color = getHex();
+
+    if(color !== undefined) {
+    console.log(color);
+    }
+
+    // arrow function
+
+    var add = (a,b) => a + b;
+
+    var total = add(10,30);
+    console.log(total);
+
+  
+
+
+
+
+
+
 
   </script>
 
