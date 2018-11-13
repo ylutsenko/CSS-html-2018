@@ -25,6 +25,28 @@
     </article>
   </div>
   <script>
+
+    // querySelector(css selector)
+    var p = document.querySelector('p:not(.intro)');
+    console.log(p);
+
+    // querySelectorAll()
+    var allLis = document.querySelectorAll('li');
+    console.log(allLis);
+    
+    // var review = (item) => {
+    //   console.log(item.textContent);
+    // }
+
+    allLis.forEach((item) => {
+      console.log(item.textContent)
+    });
+
+
+
+
+
+
   
   </script>
 </body>
